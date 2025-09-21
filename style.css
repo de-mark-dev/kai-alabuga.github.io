@@ -19,7 +19,7 @@ header {
   padding: 50px;
   justify-content: space-between;
   align-items: center;
-  background-color: antiquewhite
+  background-color: bisque;
 }
 label {
   font-family:"Russo One", sans-serif;
@@ -30,17 +30,19 @@ label {
   color: darkblue;
 }
 #logo {
-  width: 100px;
-  height: 100px;
+  width: 135px;
+  height: 135px;
 }
 
 /*Table*/
 
 table {
   width: 100vw;
+  padding: 10px;
   align-content: center;
   align-items: center;
   text-align: center;
+  border-spacing: 0px 10px;
 }
 caption {
   height: 50px;
@@ -52,26 +54,28 @@ caption {
   align-items: inherit;
   text-align: inherit;
   background-color: darkblue;
-  color: antiquewhite;
+  color: bisque;
 }
 thead {
-  height: 200px;
+  height: 50px;
   font-family: "Russo One", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
+  background-color: white;
 }
-td {line-height: 3}
 
 .raw {
   height: 100px;
   font-family: "Poiret One", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 15px;
+  font-size: 20px;
+  background-color: burlywood;
 }
 .photo {
   width: 100px;
   height: 100px;
+  margin: 15px;
   border-radius: 50%;
   border: 2px solid black;
 }
