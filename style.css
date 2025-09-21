@@ -9,7 +9,7 @@ header {
   display: flex;
   box-sizing: border-box;
   width: 100vw;
-  height: 200px;
+  height: 150px;
   padding: 50px;
   justify-content: space-between;
   align-items: center;
@@ -35,9 +35,9 @@ table {
 }
 caption {
   height: 50px;
-  font-family: "Poiret One", sans-serif;
-  font-size: 25px;
-  font-weight: 900;
+  font-family: "Russo One", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
   letter-spacing: 2px;
   align-content: inherit;
   align-items: inherit;
@@ -46,14 +46,12 @@ caption {
   color: antiquewhite;
 }
 thead {
-  height: 100px;
-  font-family: "Poiret One", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 30px;
-  font-weight: 900;
+  height: 200px;
+  font-family: "Russo One", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
 }
-td {
+.raw {
   height: 100px;
   font-family: "Poiret One", sans-serif;
   font-weight: 900;
