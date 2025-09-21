@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Russo+One&display=swap');
+
+* {margin: 0px}
+header {
+  display: flex;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 200px;
+  min-width: 360px;
+  max-height: 100vw;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite
+}
+label {
+  font-family:"Russo One", sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: darkblue;
+}
+#logo {
+  width: 150px;
+  height: 150px;
+}
+table {
+  width: 100vw;
+  height: 200px;
+  min-width: 360px;
+  max-height: 100vw;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+caption {
+  height: 50px;
+  font-family: "Poiret One", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  align-content: inherit;
+  align-items: inherit;
+  text-align: inherit;
+  background-color: darkblue;
+  color: antiquewhite;
+}
+thead {
+  height: 100px;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 900;
+}
+td {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+}
+.photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.button {
+  box-sizing: border-box;
+  width: 250px;
+  height: 100px;
+  padding: 10px;
+  border: 2px darkblue solid;
+  border-radius: 10px;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  background: darkblue;
+  color: antiquewhite;
+}
+.button:hover {
+  background: antiquewhite;
+  color: darkblue;
+}
