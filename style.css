@@ -75,6 +75,14 @@ article {
   
   background-color: silver;
 }
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a[href]:not(.button):not(.modal-close):not(.modal-text) {
+  text-decoration: none;
+  color: #425EE6;
+}
 .block-1 {
   width: 40vw;
   min-width: 40vw;
@@ -95,10 +103,6 @@ article {
   
   border-radius: 50%;
   border: 2px solid black;
-}
-a {
-  text-decoration: none;
-  color: #000000;
 }
 .block-2 {
   width: 40vw;
