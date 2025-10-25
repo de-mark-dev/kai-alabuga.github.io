@@ -58,7 +58,6 @@ h1 {
   background-color: #182A73;
   color: #FACE8B;
 }
-
 article {
   margin: 20px;
   padding: 10px;
@@ -96,6 +95,10 @@ article {
   
   border-radius: 50%;
   border: 2px solid black;
+}
+a {
+  text-decoration: none;
+  color: #000000;
 }
 .block-2 {
   width: 40vw;
@@ -142,25 +145,50 @@ article {
   background: #FFFFFF;
   color: #DB521F;
 }
-.button-locked {
-  width: 100px;
-  min-width: 100px;
-  height: 50px;
-  margin: 20px 20px 20px 50px;
-  border: 2px solid #7F7F7F;
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-popup {
+  width: 50%;
+  height: auto;
+  min-height: 200px;
+  padding: 20px;
   border-radius: 10px;
+  position: relative;
+  background: white;
   
-  box-sizing: border-box;
-  align-content: center;
-  
-  font-family: "Russo One", sans-serif;
-  font-size: 12pt;
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-family: Bahnschrift, "Bahnschrift Condensed", "Bahnschrift Light", "Bahnschrift Light Condensed", "Bahnschrift Light SemiCondensed", "Bahnschrift SemiBold", "Bahnschrift SemiBold Condensed", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiCondensed", "Bahnschrift SemiLight", "Bahnschrift SemiLight Condensed", "Bahnschrift SemiLight SemiConde";
+  font-size: 14pt;
+  font-weight: 200;
+  text-align: left;
+}
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
   text-decoration: none;
-  
-  background: #FFFFFF;
-  color: #7F7F7F;
+  font-size: 24px;
+  color: #888;
+}
+.modal-text {font-size: inherit}
+.modal-overlay:target {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease;
 }
 
 /*Media Queries*/
@@ -210,4 +238,9 @@ article {
     border-raius: 100%;
     margin: 10px 10px 10px 10px;
   }
+  .modal-popup {
+    width: 95vh;
+    height: 95vh;
+  }
+  .modal-text {font-size: 12pt}
 }
