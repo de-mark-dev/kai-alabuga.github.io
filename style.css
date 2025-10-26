@@ -79,7 +79,7 @@ a {
   text-decoration: none;
   color: #000000;
 }
-a[href]:not(.button):not(.modal-close):not(.modal-text) {
+a[href]:not(.button):not(.modal-close) {
   text-decoration: none;
   color: #425EE6;
 }
@@ -175,6 +175,9 @@ a[href]:not(.button):not(.modal-close):not(.modal-text) {
   position: relative;
   background: white;
   
+  display: flex;
+  flex-direction: column;
+  
   font-family: Bahnschrift, "Bahnschrift Condensed", "Bahnschrift Light", "Bahnschrift Light Condensed", "Bahnschrift Light SemiCondensed", "Bahnschrift SemiBold", "Bahnschrift SemiBold Condensed", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiCondensed", "Bahnschrift SemiLight", "Bahnschrift SemiLight Condensed", "Bahnschrift SemiLight SemiConde";
   font-size: 14pt;
   font-weight: 200;
@@ -188,7 +191,11 @@ a[href]:not(.button):not(.modal-close):not(.modal-text) {
   font-size: 24px;
   color: #888;
 }
-.modal-text {font-size: inherit}
+.modal-text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: inherit;
+}
 .modal-overlay:target {
   visibility: visible;
   opacity: 1;
@@ -243,8 +250,7 @@ a[href]:not(.button):not(.modal-close):not(.modal-text) {
     margin: 10px 10px 10px 10px;
   }
   .modal-popup {
-    width: 95vh;
-    height: 95vh;
+    width: 70%;
   }
   .modal-text {font-size: 12pt}
 }
